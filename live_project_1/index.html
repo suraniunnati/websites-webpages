@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- remixicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- amination -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </head>
+  <body>
+    <!-- loder -->
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <!-- header -->
+    <header
+      class="h-[auto] xl:h-[50vw] border-2 bg-[#000958] flex justify-center flex-wrap"
+    >
+      <div
+        class="wow animate__animated animate__backInDown navbar w-[80%] h-[10vw] xl:h-[5vw] flex justify-evenly items-center">
+        <div
+          class="logo w-[30%] xl:w-[15%] h-full flex justify-center items-center">
+          <img src="assets/logo.png" alt="" />
+        </div>
+        <nav
+          class="hidden md:flex xl:flex justify-evenly items-center sh-full md:w-[65%] xl:w-[60%] text-white">
+          <a href="" class="hover:border-b-2"
+            >HOME <i class="ri-arrow-down-s-line"></i
+          ></a>
+          <a href="" class="hover:border-b-2"
+            >ABOUT <i class="ri-arrow-down-s-line"></i
+          ></a>
+          <a href="" class="hover:border-b-2"
+            >SERVICES <i class="ri-arrow-down-s-line"></i
+          ></a>
+          <a href="" class="hover:border-b-2"
+            >PAGES <i class="ri-arrow-down-s-line"></i
+          ></a>
+          <a href="" class="hover:border-b-2"
+            >NEWS <i class="ri-arrow-down-s-line"></i
+          ></a>
+          <a href="" class="hover:border-b-2"
+            >CONTACT <i class="ri-arrow-down-s-line"></i
+          ></a>
+        </nav>
+        <button
+          class="bg-[#1DD3F8] text-white p-[5px] xl:p-3 rounded-[15px] md:w-[8vw] xl:w-[6vw] text-[10px] xl:text-[16px] hover:translate-x-2"
+        >
+          Log in <i class="ri-arrow-go-forward-fill"></i>
+        </button>
+
+        <div class="btn3 block md:hidden xl:hidden ms-3">
+          <i class="ri-menu-fill text-[23px] text-white"></i>
+        </div>
+      </div>
+
+      <div
+        class="wow animate__animated animate__backInLeft a w-[90%] md:w-[70%] xl:w-[48%] h-[30vw] text-white p-[3vw] h-[auto]"
+      >
+        <h1 class="font-bold text-[7vw] md:text-[5vw] xl:text-[2.5vw]">
+          World’s Leading Machine<br />
+          Learning Company
+        </h1>
+        <br />
+        <p class="text-[10px] xl:text-[18px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+          suspendisse ultrices gravida risus commodo
+        </p>
+        <br /><br />
+        <button
+          class="p-3 bg-[#1DD3F8] text-white rounded-[15px] xl:w-[7vw] hover:-translate-y-3 hover:bg-white hover:text-[#1DD3F8] hover:rounded-[8px]"
+        >
+          Learn More
+        </button>
+        <button
+          class="p-3 bg-[#1DD3F8] text-white rounded-[15px] xl:w-[7vw] ms-3 hover:translate-y-3 hover:bg-white hover:text-[#1DD3F8] hover:rounded-[8px]"
+        >
+          Counter Us
+        </button>
+      </div>
+      <div class="wow animate__animated animate__backInUp a w-full md:w-[70%] xl:w-[45%] h-[30vw] h-[auto] relative">
+        <br />
+        <img src="assets/bg1.png" alt="" />
+        <img
+          src="assets/sp1.png"
+          alt=""
+          class="bg1 absolute top-[3.9vw] md:top-[30px] xl:top-0 left-[31vw] md:left-[23vw] xl:left-[12.6vw] rounded-full h-[45vw] md:h-[28vw] xl:h-[22vw]"
+        />
+        <img
+          src="assets/sp2.png"
+          alt=""
+          class="bg2 absolute top-[35%] left-[27vw] md:left-[20vw] xl:left-[12.6vw] w-[50%]"
+        />
+      </div>
+    </header>
+
+    <!-- section-1 -->
+    <div class="part1 h-[auto] xl:h-[54vw] flex flex-wrap justify-center">
+      <div
+        class="b container w-[90%] h-[auto] xl:h-[17vw] mt-[-5%] flex bg-white flex-wrap z-[1]"
+      >
+        <div
+          class="wow animate__animated animate__fadeInUp w-full md:w-[33.3%] xl:w-[33.3%] xl:h-full p-[30px] text-center shadow-lg"
+        >
+          <i
+            class="icon ri-lock-2-line text-[6vw] md:text-[4vw] xl:text-[2vw] text-[#1dd3f8]"
+          ></i
+          ><br /><br />
+          <h1 class="text-[23px] font-bold">Data Science</h1>
+          <br />
+          <p class="text-[gray] mb-10">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia,
+            maxime ipsum praesentium culpa expedita.
+          </p>
+          <i
+            class="ri-arrow-right-circle-fill text-[5vw] md:text-[3vw] xl:text-[1.5vw]"
+          ></i>
+        </div>
+
+        <div
+          class="wow animate__animated animate__fadeInUp c w-full md:w-[33.3%] xl:w-[33.3%] xl:h-full p-[30px] text-center shadow-lg"
+        >
+          <i
+            class="icon ri-user-voice-line text-[6vw] md:text-[4vw] xl:text-[2vw] text-[#1dd3f8]"
+          ></i
+          ><br /><br />
+          <h1 class="text-[23px] font-bold">Data Engineer</h1>
+          <br />
+          <p class="text-[gray] mb-10">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia,
+            maxime ipsum praesentium culpa expedita.
+          </p>
+          <i
+            class="ri-arrow-right-circle-fill text-[5vw] md:text-[3vw] xl:text-[1.5vw]"
+          ></i>
+        </div>
+
+        <div
+          class="wow animate__animated animate__fadeInUp c w-full md:w-[33.3%] xl:w-[33.3%] xl:h-full p-[30px] text-center shadow-lg"
+        >
+          <i
+            class="icon ri-bar-chart-grouped-fill text-[6vw] md:text-[4vw] xl:text-[2vw] text-[#1dd3f8]"
+          ></i
+          ><br /><br />
+          <h1 class="text-[23px] font-bold">Facing Challenges</h1>
+          <br />
+          <p class="text-[gray] mb-10">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia,
+            maxime ipsum praesentium culpa expedita.
+          </p>
+          <i
+            class="ri-arrow-right-circle-fill text-[5vw] md:text-[3vw] xl:text-[1.5vw]"
+          ></i>
+        </div>
+      </div>
+      <div class=" xl:h-[30vw] w-full flex justify-center flex-wrap">
+        <div
+          class="wow animate__animated animate__backInLeft c1 w-full md:w-[70%] xl:w-[40%] flex items-center justify-center p-5"
+        >
+          <img src="assets/p1.png" alt=""  class="p1">
+        </div>
+        <div class="wow animate__animated animate__backInRight c1 w-full md:w-[70%] xl:w-[40%] p-10">
+          <span class="text-cyan-400">About Us</span>
+          <br />
+          <h1 class="text-[5vw] md:text-[3.5vw] xl:text-[2vw] font-bold">
+            We Complete Every Project With Extra Care As Customer Need
+          </h1>
+          <br />
+          <p class="text-[gray] text-[3vw] md:text-[1.5vw] xl:text-[16px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+            accumsan lacus vel.
+          </p>
+          <br />
+          <ul>
+            <li>
+              <img src="assets/chack_icon.png" alt="" class="float-start" />
+              Advanced caching
+            </li>
+            <li>
+              <img src="assets/chack_icon.png" alt="" class="float-start" />
+              Unlimited applications
+            </li>
+            <li>
+              <img src="assets/chack_icon.png" alt="" class="float-start" /> PHP
+              7 ready transfer
+            </li>
+            <li>
+              <img src="assets/chack_icon.png" alt="" class="float-start" /> PHP
+              ready serves
+            </li>
+            <li>
+              <img src="assets/chack_icon.png" alt="" class="float-start" />
+              24/7 Free extra support
+            </li>
+            <li>
+              <img src="assets/chack_icon.png" alt="" class="float-start" />
+              Optimized stack
+            </li>
+          </ul>
+          <br />
+          <button class="p-3 bg-[#1DD3F8] text-white rounded-[8px]">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-2 -->
+    <div
+      class="part2 bg-[#f1fbfd] h-[auto] xl:h-[44vw] relative flex justify-center flex-wrap z-[-1] "
+    >
+      <img src="assets/1.png" alt="" class="absolute bottom-0 left-0 z-[-1] opacity-55" />
+      <img src="assets/1.png" alt="" class="absolute top-0 right-0 z-[-1] opacity-55" />
+      <div class="container text-center mt-[4%] p-4">
+        <span class="text-cyan-500">Services</span>
+        <br />
+        <h1 class="text-[5vw] md:text-[3.5vw] xl:text-[2vw] font-bold">
+          Our Professional Services For You
+        </h1>
+        <br />
+        <p class="text-[gray]">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
+          architecto quaerat eaque<br />
+          sapiente accusantium ad ut explicabo consequuntur fuga quidem? Sint.
+        </p>
+      </div>
+      <div
+        class="wow animate__animated animate__backInDown d grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 w-full container p-12"
+      >
+        <div class=" e p-5 border bg-[#FFFFFF] border-[#1DD3F8] border-dotted">
+          <img src="assets/i1.png" alt="" class="float-start m-2" />
+          <h2 class="text-[18px] xl:text-[22px] font-bold">
+            Robotics & Drones
+          </h2>
+          <p class="text-[gray] text-[12px] xl:text-[16px]">
+            Lorem consectetur ipsum dolor sit amet, adipiscing elit, do eiusmod
+            tempor incididunt sed.
+          </p>
+        </div>
+        <div class=" e p-5 border bg-[#FFFFFF] border-[#1d54f7] border-dotted">
+          <img src="assets/i2.png" alt="" class="float-start m-2" />
+          <h2 class="text-[18px] xl:text-[22px] font-bold">
+            Virtually Reality
+          </h2>
+          <p class="text-[gray] text-[12px] xl:text-[16px]">
+            Lorem consectetur ipsum dolor sit amet, adipiscing elit, do eiusmod
+            tempor incididunt sed.
+          </p>
+        </div>
+        <div class=" e p-5 border bg-[#FFFFFF] border-[#1df7cf] border-dotted">
+          <img src="assets/i3.png" alt="" class="float-start m-2" />
+          <h2 class="text-[18px] xl:text-[22px] font-bold">Image Processing</h2>
+          <p class="text-[gray] text-[12px] xl:text-[16px]">
+            Lorem consectetur ipsum dolor sit amet, adipiscing elit, do eiusmod
+            tempor incididunt sed.
+          </p>
+        </div>
+        <div class=" e p-5 border bg-[#FFFFFF] border-[#f7d61d] border-dotted">
+          <img src="assets/i4.png" alt="" class="float-start m-2" />
+          <h2 class="text-[18px] xl:text-[22px] font-bold">Order Management</h2>
+          <p class="text-[gray] text-[12px] xl:text-[16px]">
+            Lorem consectetur ipsum dolor sit amet, adipiscing elit, do eiusmod
+            tempor incididunt sed.
+          </p>
+        </div>
+        <div class=" e p-5 border bg-[#FFFFFF] border-[#f73e1d] border-dotted">
+          <img src="assets/i5.png" alt="" class="float-start m-2" />
+          <h2 class="text-[18px] xl:text-[22px] font-bold">
+            Robotics & Drones
+          </h2>
+          <p class="text-[gray] text-[12px] xl:text-[16px]">
+            Lorem consectetur ipsum dolor sit amet, adipiscing elit, do eiusmod
+            tempor incididunt sed.
+          </p>
+        </div>
+        <div class=" e p-5 border bg-[#FFFFFF] border-[#0ad32f] border-dotted">
+          <img src="assets/i6.png" alt="" class="float-start m-2" />
+          <h2 class="text-[18px] xl:text-[22px] font-bold">Machine Learning</h2>
+          <p class="text-[gray] text-[12px] xl:text-[16px]">
+            Lorem consectetur ipsum dolor sit amet, adipiscing elit, do eiusmod
+            tempor incididunt sed.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-3 -->
+    <div class="part3 flex justify-center flex-wrap">
+      <div class="container text-center p-5">
+        <span class="text-cyan-500">What We Offer</span>
+        <h1 class="text-[5vw] md:text-[3.5vw] xl:text-[2vw] font-bold">
+          Our Pricing Plan For You
+        </h1>
+        <br />
+        <p class="text-[gray]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor<br />
+          incididunt ut labore et dolore magna aliqua. ipsum suspendisse.
+        </p>
+        <br />
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div
+        class="f grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 md:gap-4 xl:gap-8 p-[30px] md:w-full xl:w-[75%]"
+      >
+        <div class="wow animate__animated animate__backInLeft g p-10 my-3">
+          <h1
+            class="text-[5vw] md:text-[2.5vw] xl:text-[1.5vw] font-bold text-center"
+          >
+            Basic
+          </h1>
+          <p class="text-center">Build A Website</p>
+          <div
+            class="g1 h-[120px] w-[120px] shadow-lg rounded-full flex justify-center items-center ms-[20%] xl:ms-[35%]"
+          >
+            <h1 class="text-[3vw] xl:text-[1.8vw] font-bold">
+              $39<sub>/y</sub>
+            </h1>
+          </div>
+          <br />
+          <ul class="xl:ms-[15%]">
+            <li class="list-none">
+              <img src="assets/chack_icon.png" alt="" class="float-start" />
+              Drag & Drop Builder
+            </li>
+            <li class="list-none">
+              <img src="assets/chack_icon.png" alt="" class="float-start" />
+              Lead Generation & Sales
+            </li>
+            <li class="list-none">
+              <img src="assets/chack_icon.png" alt="" class="float-start" />
+              Boot & Digital Assistants
+            </li>
+            <li class="list-none">
+              <img src="assets/chack_icon.png" alt="" class="float-start" />
+              Customer Service
+            </li>
+            <li class="list-none">
+              <img src="assets/cross.png" alt="" class="float-start" /> Up to
+              1000 Subscribers
+            </li>
+            <li class="list-none">
+              <img src="assets/cross.png" alt="" class="float-start" />
+              Unlimited Broadcasts
+            </li>
+            <li class="list-none">
+              <img src="assets/cross.png" alt="" class="float-start" /> Landing
+              Pages & Web Widgets
+            </li>
+          </ul>
+          <br />
+          <button class="p-3 text-white bg-[#1DD3F8] rounded-[10px] ms-[35%]">
+            Get Started
+          </button>
+        </div>
+        <div class="wow animate__animated animate__fadeInUp g p-10 my-3">
+          <h1
+            class="text-[5vw] md:text-[2.5vw] xl:text-[1.5vw] font-bold text-center"
+          >
+            Standard
+          </h1>
+          <p class="text-center">Build A Website</p>
+          <div
+            class="g1 h-[120px] w-[120px] shadow-lg rounded-full flex justify-center items-center ms-[20%] xl:ms-[35%]"
+          >
+            <h1 class="text-[3vw] xl:text-[1.8vw] font-bold">
+              $79<sub>/y</sub>
+            </h1>
+          </div>
+          <br />
+          <ul class="xl:ms-[15%]">
+            <li class="list-none">
+              <img src="assets/chack_icon.png" alt="" class="float-start" />
+              Drag & Drop Builder
+            </li>
+            <li class="list-none">
+              <img src="assets/chack_icon.png" alt="" class="float-start" />
+              Lead Generation & Sales
+            </li>
+            <li class="list-none">
+              <img src="assets/chack_icon.png" alt="" class="float-start" />
+              Boot & Digital Assistants
+            </li>
+            <li class="list-none">
+              <img src="assets/chack_icon.png" alt="" class="float-start" />
+              Customer Service
+            </li>
+            <li class="list-none">
+              <img src="assets/cross.png" alt="" class="float-start" /> Up to
+              1000 Subscribers
+            </li>
+            <li class="list-none">
+              <img src="assets/cross.png" alt="" class="float-start" />
+              Unlimited Broadcasts
+            </li>
+            <li class="list-none">
+              <img src="assets/cross.png" alt="" class="float-start" /> Landing
+              Pages & Web Widgets
+            </li>
+          </ul>
+          <br />
+          <button class="p-3 text-white bg-[#1DD3F8] rounded-[10px] ms-[35%]">
+            Get Started
+          </button>
+        </div>
+        <div class="wow animate__animated animate__backInRight g p-10 my-3">
+          <h1
+            class="text-[5vw] md:text-[2.5vw] xl:text-[1.5vw] font-bold text-center"
+          >
+            Premium
+          </h1>
+          <p class="text-center">Build A Website</p>
+          <div
+            class="g1 h-[120px] w-[120px] shadow-lg rounded-full flex justify-center items-center ms-[20%] xl:ms-[35%]"
+          >
+            <h1 class="text-[3vw] xl:text-[1.8vw] font-bold">
+              $99<sub>/y</sub>
+            </h1>
+          </div>
+          <br />
+          <ul class="xl:ms-[15%]">
+            <li class="list-none">
+              <img src="assets/chack_icon.png" alt="" class="float-start" />
+              Drag & Drop Builder
+            </li>
+            <li class="list-none">
+              <img src="assets/chack_icon.png" alt="" class="float-start" />
+              Lead Generation & Sales
+            </li>
+            <li class="list-none">
+              <img src="assets/chack_icon.png" alt="" class="float-start" />
+              Boot & Digital Assistants
+            </li>
+            <li class="list-none">
+              <img src="assets/chack_icon.png" alt="" class="float-start" />
+              Customer Service
+            </li>
+            <li class="list-none">
+              <img src="assets/cross.png" alt="" class="float-start" /> Up to
+              1000 Subscribers
+            </li>
+            <li class="list-none">
+              <img src="assets/cross.png" alt="" class="float-start" />
+              Unlimited Broadcasts
+            </li>
+            <li class="list-none">
+              <img src="assets/cross.png" alt="" class="float-start" /> Landing
+              Pages & Web Widgets
+            </li>
+          </ul>
+          <br />
+          <button class="p-3 text-white bg-[#1DD3F8] rounded-[10px] ms-[35%]">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-4 -->
+    <div
+      class="part4 xl:flex items-center justify-center text-white bg-[#060542] h-[auto] xl:h-[25vw] relative bg-[url('./assets/bg3.png')] bg-no-repeat bg-center z-[-1] p-10 mb-10"
+    >
+      <img
+        src="assets/bg2.png"
+        alt=""
+        class=" absolute bottom-0 left-0 h-[70%] opacity-45 z-[-1]"
+      />
+      <img
+        src="assets/bg2.png"
+        alt=""
+        class="absolute bottom-0 right-0 h-[70%] opacity-45 z-[-1]"
+      />
+      <div class="h relative">
+        <h1 class="text-[5vw] md:text-[3vw] xl:text-[1.8vw] font-bold">
+          Sign Up To The Free Newsletter
+        </h1>
+        <input
+          type="email"
+          placeholder="Your Email"
+          class="p-3 w-full rounded-[8px] mt-3"
+        />
+        <button
+          class="p-3 text-white bg-[#1DD3F8] rounded-[8px] absolute bottom-0 right-0"
+        >
+          Subscribe
+        </button>
+      </div>
+      <img src="assets/p2.png" alt="" class="wow animate__animated animate__flipInY py-[5%] xl:px-[5%]" />
+      <div class="h">
+        <h1 class="text-[5vw] md:text-[3vw] xl:text-[1.8vw] font-bold">
+          Sign Up To The Free Newsletter
+        </h1>
+        <h1 class="text-[5vw] md:text-[3vw] xl:text-[1.8vw] font-bold">
+          +882-569-756
+        </h1>
+      </div>
+    </div>
+
+    <!-- section-5 -->
+    <div class="part5 flex justify-center items-center flex-wrap h-[auto] xl:h-[35vw]">
+      <div class="wow animate__animated animate__backInLeft i p-5 w-[90%] xl:w-[40%]">
+        <h1 class="xl:text-[2vw] font-bold">
+          Make Your Business More Competitive And Enduring
+        </h1>
+        <br />
+        <div class="k p-4 xl:p-5 xl:h-[8vw]">
+          <img
+            src="assets/i1.png"
+            alt=""
+            class="float-start me-5 my-5 sm:my-[0] xl:my-5"
+            style="border-radius: 0 50% 50% 50%"
+          />
+          <h2 class="xl:text-[1.1vw] font-bold">
+            AI Will Automate Cybersecurity Improve
+          </h2>
+          <p class="text-[gray] text-[10px] xl:text-[16px] md:text-[15px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore. Quis ipsum
+            suspendisse ultrices gravida suspendisse.
+          </p>
+        </div>
+        <div class="k p-4 xl:p-5 xl:h-[8vw]">
+          <img
+            src="assets/i2.png"
+            alt=""
+            class="float-start me-5 my-5 sm:my-[0] xl:my-5"
+            style="border-radius: 0 50% 50% 50%"
+          />
+          <h2 class="xl:text-[1.1vw] font-bold">
+            A Community With A Unique Mission
+          </h2>
+          <p class="text-[gray] text-[10px] xl:text-[16px] md:text-[15px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore. Quis ipsum
+            suspendisse ultrices gravida suspendisse.
+          </p>
+        </div>
+        <br />
+        <button class="p-3 text-white bg-[#1DD3F8] rounded-lg ms-5 px-[30px]">
+          Know Details
+        </button>
+      </div>
+      <div class="i p-10 w-[90%] xl:w-[40%] grid grid-cols-2 gap-8">
+        <div
+          class="wow animate__animated animate__rotateInDownRight j h-[30vw] xl:h-[12vw] bg-[#E2E2FC] relative text-center p-2 pt-6 xl:pt-12"
+        >
+          <img
+            src="assets/bg2.png"
+            alt=""
+            class="opacity-85 h-[50%] absolute bottom-0 right-0"
+          />
+          <h1
+            class="xl:text-[2.5vw] sm:text-[5vw] md:text-[4vw] font-bold text-[#6B6BD4]"
+          >
+            95%
+          </h1>
+          <p>Project Completed</p>
+        </div>
+        <div
+          class="wow animate__animated animate__rotateInDownRight j h-[30vw] xl:h-[12vw] mt-10 bg-[#CAE5FE] relative text-center p-2 pt-6 xl:pt-12"
+        >
+          <img
+            src="assets/bg2.png"
+            alt=""
+            class="opacity-85 h-[50%] absolute bottom-0 right-0"
+          />
+          <h1
+            class="xl:text-[2.5vw] sm:text-[5vw] md:text-[4vw] font-bold text-[#3A86CB]"
+          >
+            90%
+          </h1>
+          <p>Design</p>
+        </div>
+        <div
+          class="wow animate__animated animate__rotateInDownRight j h-[30vw] xl:h-[12vw] mt-[-10%] bg-[#C0FEDC] relative text-center p-2 pt-6 xl:pt-12"
+        >
+          <img
+            src="assets/bg2.png"
+            alt=""
+            class="opacity-85 h-[50%] absolute bottom-0 right-0"
+          />
+          <h1
+            class="xl:text-[2.5vw] sm:text-[5vw] md:text-[4vw] font-bold text-[#23BC68]"
+          >
+            85%
+          </h1>
+          <p>Happy Clients</p>
+        </div>
+        <div
+          class="wow animate__animated animate__rotateInDownRight j h-[30vw] xl:h-[12vw] bg-[#FBC7BA] relative text-center p-2 pt-6 xl:pt-12"
+        >
+          <img
+            src="assets/bg2.png"
+            alt=""
+            class="opacity-85 h-[50%] absolute bottom-0 right-0"
+          />
+          <h1
+            class="xl:text-[2.5vw] sm:text-[5vw] md:text-[4vw] font-bold text-[#C05234]"
+          >
+            80%
+          </h1>
+          <p>Award Win</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-6 -->
+    <div class="part6 bg-[#192064] px-[10%] py-[5%] h-[auto]  bg-[url('./assets/bg4.png')]  ">
+      <div class="container text-center p-3">
+        <span class="text-cyan-500">Testimonials</span>
+        <br>
+        <h1 class="text-[5vw] md:text-[3.5vw] xl:text-[2vw] font-bold text-white">
+          What Clients Say About Us
+        </h1>
+      </div>
+       <br>   
+
+      <div class="swiper mySwiper wow animate__animated animate__zoomIn">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide p-5">
+            <p class="text-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,do eiusmod tempor incididunt ut labore et dolore.</p>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <img src="assets/ph1.jpg" alt="" class="ms-[40%] rounded-lg my-3">
+            <h3 class="font-bold">Axon Detos</h3>
+            <span class="text-cyan-500 text-[12px]">CEO of ET</span>
+          </div>
+          <div class="swiper-slide p-5">
+            <p class="text-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,do eiusmod tempor incididunt ut labore et dolore.</p>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <img src="assets/ph2.jpg" alt="" class="ms-[40%] rounded-lg my-3">
+            <h3 class="font-bold">John Dona</h3>
+            <span class="text-cyan-500 text-[12px]">UI/UX Designer</span>
+          </div>
+          <div class="swiper-slide p-5">
+            <p class="text-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,do eiusmod tempor incididunt ut labore et dolore.</p>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <img src="assets/ph3.jpg" alt="" class="ms-[40%] rounded-lg my-3">
+          <h3 class="font-bold">Jon Smith</h3>
+          <span class="text-cyan-500 text-[12px]">ReactJS Developer</span>
+          </div>
+          <div class="swiper-slide p-5">
+            <p class="text-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,do eiusmod tempor incididunt ut labore et dolore.</p>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <img src="assets/ph1.jpg" alt="" class="ms-[40%] rounded-lg my-3">
+            <h3 class="font-bold">Axon Detos</h3>
+            <span class="text-cyan-500 text-[12px]">CEO of ET</span>
+          </div>
+          <div class="swiper-slide p-5">
+            <p class="text-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,do eiusmod tempor incididunt ut labore et dolore.</p>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <img src="assets/ph2.jpg" alt="" class="ms-[40%] rounded-lg my-3">
+            <h3 class="font-bold">John Dona</h3>
+            <span class="text-cyan-500 text-[12px]">UI/UX Designer</span>
+          </div>
+          <div class="swiper-slide p-5">
+            <p class="text-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,do eiusmod tempor incididunt ut labore et dolore.</p>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <img src="assets/ph3.jpg" alt="" class="ms-[40%] rounded-lg my-3">
+          <h3 class="font-bold">Jon Smith</h3>
+          <span class="text-cyan-500 text-[12px]">ReactJS Developer</span>
+          </div>
+      
+         
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+     <!-- section-7 -->
+      <div class="part7 flex flex-wrap justify-center ">
+        <div class="container text-center p-5 w-[100%] mt-5">
+          <span class="text-cyan-500">What We Offer</span>
+          <br>
+          <h1 class="text-[5vw] md:text-[3.5vw] xl:text-[2.5vw] font-bold">
+            Industries We Serve </h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates magni fugit, quod<br> iure quibusdam, omnis nisi cum, nostrum nulla deleniti mollitia tenetur.</p>
+        </div>
+        <div class="m w-[90%] md:w-[60%] xl:w-[45%] px-[10%] ">
+          <div class="wow animate__animated animate__slideInLeft n p-4 my-8 relative">
+            <img src="assets/ip1.png" alt="" class="float-start me-3">
+            <h1 class="font-bold xl:text-[1.3vw]"> Heavy Industry</h1>
+            <p>All kind of industry</p>
+            <div class="n1 h-[80px] xl:h-[86px] w-[90px] rounded-full absolute right-[-35px] bottom-0 bg-white border-r flex justify-center items-center">
+              <i class="ri-arrow-right-double-fill text-[20px] text-[#dadada]"></i>
+            </div>
+          </div>
+          <div class="wow animate__animated animate__slideInLeft n p-4 my-8 relative">
+            <img src="assets/ip2.png" alt="" class="float-start me-3">
+            <h1 class="font-bold xl:text-[1.3vw]">  Transportation</h1>
+            <p>All kind of industry</p>
+            <div class="n1  h-[80px] xl:h-[86px] w-[90px] rounded-full absolute right-[-35px] bottom-0 bg-white border-r flex justify-center items-center">
+              <i class="ri-arrow-right-double-fill text-[20px] text-[#dadada]"></i>
+            </div>
+          </div>
+          <div class="wow animate__animated animate__slideInLeft n p-4 my-8 relative">
+            <img src="assets/ip3.png" alt="" class="float-start me-3">
+            <h1 class="font-bold xl:text-[1.3vw]"> Health Care</h1>
+            <p>All kind of industry</p>
+            <div class="n1  h-[80px] xl:h-[86px] w-[90px] rounded-full absolute right-[-35px] bottom-0 bg-white border-r flex justify-center items-center">
+              <i class="ri-arrow-right-double-fill text-[20px] text-[#dadada]"></i>
+            </div>
+          </div>
+          <div class="wow animate__animated animate__slideInLeft n p-4 my-8 relative">
+            <img src="assets/ip4.png" alt="" class="float-start me-3">
+            <h1 class="font-bold xl:text-[1.3vw]"> Manufacturing</h1>
+            <p>All kind of industry</p>
+            <div class="n1  h-[80px] xl:h-[86px] w-[90px] rounded-full absolute right-[-35px] bottom-0 bg-white border-r flex justify-center items-center">
+              <i class="ri-arrow-right-double-fill text-[20px] text-[#dadada]"></i>
+            </div>
+          </div>
+          <div class="wow animate__animated animate__slideInLeft n p-4 my-8 relative">
+            <img src="assets/ip5.png" alt="" class="float-start me-3">
+            <h1 class="font-bold xl:text-[1.3vw]"> Logistic</h1>
+            <p>All kind of industry</p>
+            <div class="n1  h-[80px] xl:h-[86px] w-[90px] rounded-full absolute right-[-35px] bottom-0 bg-white border-r flex justify-center items-center">
+              <i class="ri-arrow-right-double-fill text-[20px] text-[#dadada]"></i>
+            </div>
+          </div>
+        </div>
+        <div class="wow animate__animated animate__backInRight m w-[90%] md:w-[60%] xl:w-[45%] flex justify-center items-center">
+          <img src="assets/p3.avif" alt="" class="h-[80%] p1">
+        </div>
+      </div>
+
+     <!-- section-8 -->
+       <div class="wow animate__animated animate__fadeInDownBig part8 p-8 grid grid-cols-5 gap-8 ps-[10%]">
+        <img src="assets/brand1.png" alt="">
+        <img src="assets/brand2.png" alt="">
+        <img src="assets/brand3.png" alt="">
+        <img src="assets/brand4.png" alt="">
+        <img src="assets/brand5.png" alt="">
+        <img src="assets/brand6.png" alt="">
+        <img src="assets/brand7.png" alt="">
+        <img src="assets/brand8.png" alt="">
+        <img src="assets/brand9.png" alt="">
+        <img src="assets/brand10.png" alt="">
+     
+       </div>
+
+    <!-- footer -->
+    <footer class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 p-12 bg-[#00042C] text-white   bg-[url('./assets/bg5.png')] bg-no-repeat bg-right">
+      <div class="fg p-5">
+        <img src="assets/logo.png" alt=""><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat molestiae corporis, magni maxime perferendis ducimus totam officiis sit exercitationem sed odio debitis minus cumque dolores dicta.</p><br>
+        <i class="ri-youtube-fill"></i>
+        <i class="ri-instagram-fill"></i>
+        <i class="ri-linkedin-fill"></i>
+        <i class="ri-whatsapp-fill"></i>
+      </div>
+      <div class="fg p-5">
+        <h1 class="xl:text-[1.5vw] font-bold">Services</h1><br>
+        <p><i class="ri-arrow-right-double-line"></i> Big Data</p>
+        <p><i class="ri-arrow-right-double-line"></i> UI/UX Design</p>
+        <p><i class="ri-arrow-right-double-line"></i> Desktop Application</p>
+        <p><i class="ri-arrow-right-double-line"></i> Mobile Application</p>
+        <p><i class="ri-arrow-right-double-line"></i> Product Engineering</p>
+        <p><i class="ri-arrow-right-double-line"></i> Machine Learning</p>
+      </div>
+      <div class="fg p-5">
+        <h1 class="xl:text-[1.5vw] font-bold">Important Links</h1><br>
+        <p><i class="ri-arrow-right-double-line"></i> About Us</p>
+        <p><i class="ri-arrow-right-double-line"></i> Services</p>
+        <p><i class="ri-arrow-right-double-line"></i> Pricing</p>
+        <p><i class="ri-arrow-right-double-line"></i> Team</p>
+        <p><i class="ri-arrow-right-double-line"></i> Support</p>
+        <p><i class="ri-arrow-right-double-line"></i> Testimonials</p>
+      </div>
+      <div class="fg p-5">
+        <h1 class="xl:text-[1.5vw] font-bold">Information</h1><br>
+        <p class="font-bold xl:text-[1.1vw]"><i class="ri-phone-fill"></i> Phone <span class="font-light"><br>+882-569-756</span></p>
+        <p class="font-bold xl:text-[1.1vw]"><i class="ri-mail-open-fill"></i> Email <span class="font-light"><br>hello@jumpx.com</span></p>
+        <p class="font-bold xl:text-[1.1vw]"><i class="ri-map-pin-2-fill"></i> Address <span class="font-light"><br>123, Western Road, Melbourne Australia</span></p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      breakpoints: {  
+    '380': {
+      slidesPerView: 1,
+      spaceBetween: 30,},
+    '640': {
+      slidesPerView: 2,
+      spaceBetween: 30, },
+      '940': {
+      slidesPerView: 3,
+      spaceBetween: 30, },  
+  },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+<script>
+  $(window).on('load',function(){
+      $('.loader').fadeOut(7000);
+  })
+</script>
+
+<script>
+  new WOW().init();
+  </script>
+
+</html>
