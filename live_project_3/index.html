@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- remixicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="back-to-top" class="back-to-top" >up</div>
+    <!-- header -->
+    <header
+      class="rounded-full h-[50px] xl:h-[100px] flex justify-between items-center w-[75%] ms-[12.5%] bg-[#065E2E] p-2 fixed top-3 xl:top-5 z-[1]"
+    >
+      <h1
+        class="font-bold text-[#065E2E] absolute top-[-33%] md:top-[-60%] xl:top-[-38%] left-[20%] text-[3vw]"
+      >
+        |
+      </h1>
+      <h1
+        class="font-bold text-[#065E2E] absolute top-[-33%] md:top-[-60%] xl:top-[-38%] right-[20%] text-[3vw]"
+      >
+        |
+      </h1>
+      <div class="logo xl:w-[8%] h-full flex justify-center items-center">
+        <img src="assets/logo.png" alt="" class="h-[90%]" />
+      </div>
+      <nav class="w-[70%] hidden xl:flex justify-evenly text-white">
+        <a href="" class="hover:text-black hover:font-bold">ABOUT US</a>
+        <a href="" class="hover:text-black hover:font-bold">OUR CAFES</a>
+        <a href="" class="hover:text-black hover:font-bold">SHOP AT TEA POST</a>
+        <a href="" class="hover:text-black hover:font-bold">FRANCHISE</a>
+        <a href="" class="hover:text-black hover:font-bold">STORE LOCATOR</a>
+        <a href="" class="hover:text-black hover:font-bold">BLOG</a>
+        <a href="" class="hover:text-black hover:font-bold">CONTACT US</a>
+      </nav>
+      <div
+        class="icon text-white w-[50%] md:w-[30%] xl:w-[16%] flex justify-evenly"
+      >
+        <i class="ri-user-fill p-1 rounded-full border px-2"></i>
+        <i class="ri-shopping-cart-2-fill p-1 rounded-full border px-2"></i>
+        <i class="ri-phone-fill p-1 rounded-full border px-2"></i>
+        <i class="ri-at-fill p-1 rounded-full border px-2"></i>
+      </div>
+    </header>
+
+    <!-- part1 -->
+    <div class="part1 h-[70vw] xl:h-[50vw]">
+      <img
+        class="mySlides h-full"
+        src="assets/banner.png"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides h-full"
+        src="assets/banner-1.png"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides h-full"
+        src="assets/banner-2.png"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides h-full"
+        src="assets/banner-3.png"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides h-full"
+        src="assets/banner-4.png"
+        style="width: 100%"
+      />
+    </div>
+
+    <!-- part2 -->
+    <div class="part2 flex justify-center py-16">
+      <div
+        class="about grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 w-[80%] xl:w-[70%]"
+      >
+        <img src="assets/about.png" alt="" class="md:w-[60%]" />
+        <div class="a p-5">
+          <h1 class="md:text-[3vw] xl:text-[3vw] font-bold">
+            INDIA’S LARGEST TEA CAFÉ CHAIN
+          </h1>
+          <br />
+          <p
+            style="font-family: 'Roboto', sans-serif"
+            class="text-[12px] md:text-[17px] text-slate-600"
+          >
+            Chai is not just a beverage, it is the Nectar which gives wings to
+            your imagination. The refreshing taste & aroma of Chai open up doors
+            to the world of dreams. And Tea Post is the zenith of such a dream –
+            to serve the best Chai in the world to all those who yearn for it.
+          </p>
+        </div>
+        <div class="a p-5 xl:p-10">
+          <p
+            style="font-family: 'Roboto', sans-serif"
+            class="text-[12px] md:text-[17px] text-slate-600"
+          >
+            We don’t want people to have just ‘a’ Chai; we want people have
+            ‘THE’ Chai. At Tea Post, you get the Chai which sends a
+            scintillating sensation down your spine. If you’re an ardent fan of
+            Chai, this is the place to be. Just come and feel the Tea Post
+            magic!
+          </p>
+          <br />
+          <button
+            class="p-3 rounded-full border-2 text-[12px] hover:bg-[#065E2E] hover:text-white"
+          >
+            ABOUT US
+          </button>
+        </div>
+        <img src="assets/about1-1.jpg" alt="" class="xl:w-[90%] md:mt-[-10%]" />
+      </div>
+    </div>
+
+    <!-- part3 -->
+    <div class="part3 xl:py-10 flex flex-wrap justify-center">
+      <h1
+        class="text-center text-[8vw] md:text-[3vw] font-bold w-full xl:mb-[4%]"
+      >
+        OUR CAFÉS
+      </h1>
+      <div class="container w-[100%] xl:w-[70%]">
+        <div class="b md:flex md:border-b-2 border-black">
+          <div class="b1 p-5 xl:p-10 xl:w-[40%]">
+            <br /><br />
+            <h1 class="xl:text-[2vw] font-bold">A Place To Talk</h1>
+            <br />
+            <p
+              style="font-family: 'Roboto', sans-serif"
+              class="text-[12px] md:text-[17px] text-slate-600"
+            >
+              A compact yet beautiful café with enough space for 25+ people — it
+              is a peaceful & hygienic hangout place for busy areas such as
+              malls & corporate parks.
+            </p>
+            <br />
+            <button
+              class="p-3 rounded-full border-2 text-[12px] hover:bg-[#065E2E] hover:text-white"
+            >
+              VIEW MORE
+            </button>
+          </div>
+          <div class="b1 flex justify-evenly p-5 md:border-s-2 border-black">
+            <img src="assets/p1.jpg" alt="" class="w-[45%]" />
+            <img src="assets/p2.png" alt="" class="w-[45%]" />
+          </div>
+        </div>
+        <div class="b md:flex md:border-b-2 border-black">
+          <div class="b1 flex justify-evenly p-5 md:border-e-2 border-black">
+            <img src="assets/p3.jpg" alt="" class="w-[45%]" />
+            <img src="assets/p4.png" alt="" class="w-[45%]" />
+          </div>
+          <div class="b1 xl:w-[55%] p-5 xl:p-10">
+            <br /><br />
+            <h1 class="xl:text-[3vw] font-bold">
+              <img src="assets/text1.png" alt="" />
+            </h1>
+            <br />
+            <p
+              style="font-family: 'Roboto', sans-serif"
+              class="text-[12px] md:text-[17px] text-slate-600"
+            >
+              An air-conditioned café with plenty of space for 50+ people — it
+              is the perfect place for quick meetings, birthday celebrations, or
+              simply some quality time.
+            </p>
+            <br />
+            <button
+              class="p-3 rounded-full border-2 text-[12px] hover:bg-[#065E2E] hover:text-white"
+            >
+              VIEW MORE
+            </button>
+          </div>
+        </div>
+        <div class="b md:flex md:border-b-2 border-black mt-[-15%] md:mt-[0]">
+          <div class="b1 xl:w-[50%] p-5 xl:p-10">
+            <br /><br />
+            <h1 class="xl:text-[3vw] font-bold">
+              <img src="assets/text2.png" alt="" />
+            </h1>
+            <br />
+            <p
+              style="font-family: 'Roboto', sans-serif"
+              class="text-[12px] md:text-[17px] text-slate-600"
+            >
+              A sprawling garden café with ample space for 300+ people — it is a
+              massive amphitheater with seating arrangements, ready to host an
+              array of live events.
+            </p>
+            <br />
+            <button
+              class="p-3 rounded-full border-2 text-[12px] hover:bg-[#065E2E] hover:text-white"
+            >
+              VIEW MORE
+            </button>
+          </div>
+          <div class="b1 flex justify-evenly p-5 md:border-s-2 border-black">
+            <img src="assets/p5.jpg" alt="" class="w-[45%]" />
+            <img src="assets/p6.jpg" alt="" class="w-[45%]" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- part4 -->
+    <div
+      class="part4 h-[90vw] xl:h-[40vw] relative flex justify-center flex-wrap"
+    >
+      <div class="w-full text-center p-3">
+        <h1 class="xl:text-[2.5vw] font-bold">OUR MENU</h1>
+      </div>
+      <div class="manu w-[50%] xl:w-[30%] xl:h-[70%] h-[50%]">
+        <div class="book-section">
+          <div class="container">
+            <div class="right">
+              <figure class="back" id="back-cover">
+                <img src="assets/m7.png" alt="" class="h-full w-full" />
+              </figure>
+              <figure class="front">
+                <img src="assets/m6.png" alt="" class="h-full w-full" />
+              </figure>
+            </div>
+            <div class="right">
+              <figure class="back">
+                <img src="assets/m5.png" alt="" class="h-full w-full" />
+              </figure>
+              <figure class="front">
+                <img src="assets/m4.png" alt="" class="h-full w-full" />
+              </figure>
+            </div>
+            <div class="right">
+              <figure class="back">
+                <img src="assets/m3.png" alt="" class="h-full w-full" />
+              </figure>
+              <figure class="front">
+                <img src="assets/m2.png" alt="" class="h-full w-full" />
+              </figure>
+            </div>
+
+            <div class="right">
+              <figure class="back">
+                <img src="assets/m1.png" alt="" class="h-full w-full" />
+              </figure>
+              <figure class="front" id="cover">
+                <img src="assets/m5.png" alt="" class="h-full w-full" />
+              </figure>
+            </div>
+          </div>
+          <button onclick="turnLeft() " class="xl:p-3">Prev</button>
+          <button onclick="turnRight()" class="xl:p-3">Next</button>
+          <br />
+        </div>
+      </div>
+      <img
+        src="assets/p7.png"
+        alt=""
+        class="absolute top-0 right-0 h-[50%] xl:h-[80%]"
+      />
+      <img
+        src="assets/p8.png"
+        alt=""
+        class="absolute bottom-0 left-0 h-[50%] xl:h-[80%]"
+      />
+    </div>
+
+    <!-- part5 -->
+    <div
+      class="part5  grid grid-cols-1 md:grid-cols-2 xl:h-[50vw] relative mt-[5%] ">
+      <img
+        src="assets/leave.png"
+        alt=""
+        class="absolute top-[-34.5%] xl:top-[-44.5%] left-[40.5%] h-[14vw] xl:h-[0]"
+      />
+      <img
+        src="assets/logo2.png"
+        alt=""
+        class="absolute md:top-[40%] top-[123vw] md:left-[44%] left-[40%] h-[20vw] md:h-[12vw]"
+      />
+      <div class="c bg-[#065E2E] p-[20%] text-white">
+        <h1 class="xl:text-[2.5vw] xl:leading-[3.5vw] font-bold">
+          OUR <br />
+          PRESENCE
+        </h1>
+        <br />
+        <hr />
+        <div class="c1 grid grid-cols-2 gap-12 text-white">
+          <div class="c2">
+            <img src="assets/Gujarat.png" alt="" />
+            <h1 class="ms-[1.5vw]">Gujarat</h1>
+          </div>
+          <div class="c2">
+            <img src="assets/Madhya-Pradesh.png" alt="" />
+            <h1>Madhya Pradesh</h1>
+          </div>
+          <div class="c2">
+            <img src="assets/Maharashtra.png" alt="" />
+            <h1>Maharashtra</h1>
+          </div>
+          <div class="c2">
+            <img src="assets/Rajasthan.png" alt="" />
+            <h1 class="ms-[1vw]">Rajasthan</h1>
+          </div>
+        </div>
+      </div>
+      <div class="c bg-[#000000] flex justify-center items-center">
+        <img src="assets/p9.png" alt="" />
+      </div>
+    </div>
+
+    <!-- part6 -->
+     <div class="part6 flex justify-center flex-wrap  py-8 my-4">
+      <div class="container text-center w-full p-3">
+        <h1 class="text-[3vw] font-bold">OUR PRODUCTS</h1>
+      </div>
+      <div class="container w-[75%] grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="d ">
+          <div class="d1 bg-[#C4D8CE] p-10">
+            <img src="assets/tea-leave.png" alt="">
+            <h1 class="xl:text-[2vw] font-bold text-[#065E2E]">TEA</h1><br>
+            <p>Bring home the authentic Tea Post experience with our signature tea powder & tea blends</p>
+            <br>
+            <button class="p-3 bg-[#065E2E] text-white rounded-3xl">VIEW MONE</button>
+          </div>
+          <div class="d1 p-5 relative">
+            <h2 class="font-bold text-[11px] md:text-[1vw] mb-2">JEERA MASALA BHAKHRI</h2>
+            <span class="text-[#065E2E]">₹300.00</span><br><br>
+            <button class="p-2 bg-[#065E2E] text-white rounded-3xl ">Know More</button>
+            <img src="assets/jeera-bhakhri.jpg" alt="" class="h-[33vw] md:h-[9vw] absolute right-0 md:right-4 top-4">
+          </div>
+        </div>
+        <div class="d ">
+          <div class="d1 p-5">
+            <img src="assets/masala-tea-min-min.jpg" alt="" class="h-[33vw]  md:h-[9vw] float-start me-5">
+            <h2 class="font-bold text-[11px] md:text-[1vw] mb-2">INDIAN MASALA TEA</h2>
+            <span class="text-[#065E2E]">₹300.00</span><br><br>
+            <button class="p-2 bg-[#065E2E] text-white rounded-3xl ">Know More</button>
+          </div>
+          <div class="d1 border-2 p-10 mt-5">
+            <img src="assets/Snacks.png" alt="">
+            <h1 class="xl:text-[2vw] font-bold text-[#065E2E]">SNACKS</h1><br>
+            <p>Make your tea time awesome with our crispy, crunchy, and flavorful Bhakhri & Khakhra</p>
+            <br>
+            <button class="p-3 bg-[#065E2E] text-white rounded-3xl">VIEW MONE</button>
+          </div>
+        </div>
+      </div>
+     </div>
+
+    <!-- part7 -->
+     <div class="part7 grid grid-cols-3 md:grid-cols-7 py-[2vw]">
+      <img src="assets/g1.png" alt="" class="hover:scale-90" style="transition: 2s;">
+      <h1 class="font-bold text-[5.5vw] md:text-[2.5vw] md:col-span-5 text-center mt-[3.5vw]">MOMENTS @ TEA POST</h1>
+      <img src="assets/g2.png" alt="" class="hover:scale-90" style="transition: 2s;">
+      <img src="assets/t1.png" alt="" class="hover:scale-90" style="transition: 2s;">
+      <img src="assets/g3.png" alt="" class="hover:scale-90" style="transition: 2s;">
+      <img src="assets/t2.png" alt="" class="hover:scale-90" style="transition: 2s;">
+      <img src="assets/g4.png" alt="" class="hover:scale-90" style="transition: 2s;">
+      <img src="assets/t3.png" alt="" class="hover:scale-90" style="transition: 2s;">
+      <img src="assets/g5.png" alt="" class="hover:scale-90" style="transition: 2s;">
+      <img src="assets/t4.png" alt="" class="hover:scale-90" style="transition: 2s;">
+      <img src="assets/g6.png" alt="" class="hover:scale-90" style="transition: 2s;">
+      <img src="assets/t5.png" alt="" class="hover:scale-90" style="transition: 2s;">
+      <img src="assets/g7.png" alt="" class="hover:scale-90" style="transition: 2s;">
+      <img src="assets/t6.png" alt="" class="hover:scale-90" style="transition: 2s;">
+      <img src="assets/g8.png" alt="" class="hover:scale-90" style="transition: 2s;">
+      <img src="assets/t7.png" alt="" class="hover:scale-90" style="transition: 2s;">
+      <img src="assets/g9.png" alt="" class="hover:scale-90" style="transition: 2s;">
+      
+     </div> 
+   
+     <!-- part8 -->
+      <div class="part8 grid grid-cols-1 md:grid-cols-2 p-10 md:w-[80%] md:ms-[10%]">
+        <div class="e p-5">
+          <img src="assets/men4.png" alt="" class="float-start h-[70vw] md:h-[35vw] me-2">
+          <h1 class="text-[10vw] md:text-[5vw] font-bold"><br><span class="text-[#065E2E]"> WE</span><br> ARE <br><span class="text-[#065E2E]"> EVERY</span><br> WHERE</h1>
+        </div>
+        <div class="e grid grid-cols-2 gap-12 xl:p-10">
+          <div class="f">
+            <div class="e1 rounded-full h-[120px] w-[120px] bg-[#065E2E] flex justify-center items-center outline outline-[#065E2E] outline-offset-4"><img src="assets/Highway.png" alt=""></div><h2 class="font-bold ms-6 mt-2">Highway</h2>
+          </div>
+          <div class="f">
+            <div class="e1 rounded-full h-[120px] w-[120px] bg-[#065E2E] flex justify-center items-center outline outline-[#065E2E] outline-offset-4"><img src="assets/high-street.png" alt=""></div><h2 class="font-bold ms-6 mt-2">high-street</h2>
+          </div>
+          <div class="f">
+            <div class="e1 rounded-full h-[120px] w-[120px] bg-[#065E2E] flex justify-center items-center outline outline-[#065E2E] outline-offset-4"><img src="assets/Mall.png" alt=""></div><h2 class="font-bold ms-11 mt-2">Mall</h2>
+          </div>
+          <div class="f">
+            <div class="e1 rounded-full h-[120px] w-[120px] bg-[#065E2E] flex justify-center items-center outline outline-[#065E2E] outline-offset-4"><img src="assets/Corporates.png" alt=""></div><h2 class="font-bold ms-6 mt-2">Corporates</h2>
+          </div>
+          <div class="f">
+            <div class="e1 rounded-full h-[120px] w-[120px] bg-[#065E2E] flex justify-center items-center outline outline-[#065E2E] outline-offset-4"><img src="assets/Institutions.png" alt=""></div><h2 class="font-bold ms-6 mt-2">Institutions</h2>
+          </div>
+          <div class="f"> 
+          <div class="e1 rounded-full h-[120px] w-[120px] bg-[#065E2E] flex justify-center items-center outline outline-[#065E2E] outline-offset-4"><img src="assets/SIS.png" alt=""></div><h2 class="font-bold ms-12 mt-2">SIS</h2>
+          </div>
+        </div>
+      </div>  
+
+     <!-- part9 -->
+      <div class="part9 bg-[#C4D8CE] flex flex-wrap justify-evenly items-center py-[4vw] mb-[3vw]">
+        <div class="texbox w-full md:w-[30%] p-5">
+          <h1 class="text-[7vw] md:text-[3vw] font-bold text-[#065E2E]">DELICIOUS DESI SNACKS</h1><br>
+          <p  style="font-family: 'Roboto', sans-serif">We know that an Indian heart always yearns for desi snacks when it comes to Chai-Nashta! That’s why you'll get the authentic desi snacks such as Samosa, Thepla, Upma, Poha, Handvo, Vadapav, Tadka Noodles, Maska Bun, and Farali Sabudana Vada.</p><br>
+          <img src="assets/zomato-logo.png" alt="" class="float-start">
+          <img src="assets/swiggy-logo.png" alt="">
+        </div>
+        <img src="assets/SNACKS-Attack.png" alt="" class="w-full md:w-[50vw] md:h-[25vw] border">
+      </div> 
+
+      <img src="assets/logo.png" alt="" class="absolute left-[45%] hidden xl:block">
+      <!-- footer -->
+       <footer class=" xl:h-[35vw] bg-[#000000] text-white flex justify-center flex-wrap mt-[8vw]">
+        <div class="g border-b border-[#ffffff7e] flex flex-wrap justify-evenly items-center xl:items-end h-[80%] w-[80%] xl:w-full">
+          <div class="g1 w-full md:w-[45%] xl:w-[23%] my-6 xl:my-[0]">
+            <h1 class="font-bold xl:text-[1.2vw]">ALSO AVAILABLE ON</h1><br>
+            <img src="assets/footer.png" alt="">
+          </div>
+          <div class="g1 h-[70%] w-full md:w-[45%] xl:w-[20%] my-6 xl:my-[0]">
+            <h1 class="font-bold xl:text-[1.2vw]">OUR POLICIES</h1><br>
+            <p>Privacy Policy</p>
+            <p>Shipping Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Refund & Cancellation Policy</p>
+          </div>
+          <div class="g1 h-[70%] w-full md:w-[45%] xl:w-[20%] my-6 xl:my-[0]">
+            <h1 class="font-bold xl:text-[1.2vw]">QUICK LINKS</h1><br>
+            <p>Shop</p>
+            <p>Career</p>
+            <p>A Place to Talk</p>
+            <p>Apni Chai Ki Dukaan</p>
+            <p>The Desi Cafe</p>
+            <p>Blog</p>
+            <p>Contact us</p>
+          </div>
+          <div class="g1  h-[70%] w-full md:w-[45%] xl:w-[20%] my-6 xl:my-[0]">
+            <h1 class="font-bold xl:text-[1.2vw]">CONTACT US</h1><br>
+            <p><i class="ri-map-pin-line"></i> D-001 Elanza Crest, Sindhu Bhavan Road, Bodakdev, Ahmedabad - 380059. Gujarat, India</p>
+            <p><i class="ri-phone-line"></i> +91 92770 00077</p>
+            <p><i class="ri-mail-unread-line"></i> support@teapost.in</p>
+          </div>
+        </div>
+        <div class="g flex items-center h-[15%] xl:w-[80%]">
+          <h2 class="text-[10px] md:text-[18px]"> Design & Developed By Unnati Surani</h2>
+          <i class="ri-user-fill p-1 rounded-full border px-2 ms-[auto] "></i>
+          <i class="ri-shopping-cart-2-fill p-1 rounded-full border px-2 md:ms-4"></i>
+          <i class="ri-phone-fill p-1 rounded-full border px-2 md:ms-4"></i>
+          <i class="ri-at-fill p-1 rounded-full border px-2 md:ms-4"></i>
+        </div>
+       </footer>
+  </body>
+
+  <!-- back-to-top -->
+  <script>
+    $(document).ready(function(){
+        $("#back-to-top").click(function(){
+            $('html,body').animate({scrollTop:0})
+        })
+
+        $(window).scroll(function(){
+            if($(this).scrollTop()>40)
+            {
+                $('#back-to-top').fadeIn();
+            }
+            else{
+                $("#back-to-top").fadeOut();
+            }
+        })
+    })
+  </script>
+
+  <!-- header-slider -->
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1;
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+  <!-- manu slider -->
+  <script>
+    var right = document.getElementsByClassName("right");
+    var si = right.length;
+    var z = 1;
+    turnRight();
+    function turnRight() {
+      if (si >= 1) {
+        si--;
+      } else {
+        si = right.length - 1;
+        function sttmot(i) {
+          setTimeout(function () {
+            right[i].style.zIndex = "auto";
+          }, 300);
+        }
+        for (var i = 0; i < right.length; i++) {
+          right[i].className = "right";
+          sttmot(i);
+          z = 1;
+        }
+      }
+      right[si].classList.add("flip");
+      z++;
+      right[si].style.zIndex = z;
+    }
+    function turnLeft() {
+      if (si < right.length) {
+        si++;
+      } else {
+        si = 1;
+        for (var i = right.length - 1; i > 0; i--) {
+          right[i].classList.add("flip");
+          right[i].style.zIndex = right.length + 1 - i;
+        }
+      }
+      right[si - 1].className = "right";
+      setTimeout(function () {
+        right[si - 1].style.zIndex = "auto";
+      }, 350);
+    }
+  </script>
+
+</html>
