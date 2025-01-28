@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-image:linear-gradient(rgba(16, 16, 16, 0.5),rgba(16, 16, 16, 0.5)), url(bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 83vh;
+        }
+        .calculator{
+            box-shadow: 0 0 20px 0 gray;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="calculator h-[32vw] w-[23vw] p-3 rounded-lg bg-[#171717] mt-[8vw]">
+        <input type="text" id="main" class="w-full h-[4vw] shadow-lg shadow-[#424242] bg-[#222831] text-white ps-5 rounded-lg mb-3 mt-1">
+        <div class="line1">
+            <button onclick="can()"  class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-[#F4CE14] rounded-lg font-bold">AC</button>
+            <button onclick="del()"  class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-[#F4CE14] rounded-lg font-bold">DEL</button>
+            <button onclick="cal('%')"  class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-[#F4CE14] rounded-lg font-bold">%</button>
+            <button onclick="cal('/')"  class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-[#F4CE14] rounded-lg font-bold">/</button>
+        </div>
+        <div class="line2">
+            <button onclick="cal('7')" class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-white rounded-lg " >7</button>
+            <button onclick="cal('8')"  class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-white rounded-lg ">8</button>
+            <button onclick="cal('9')" class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-white rounded-lg " >9</button>
+            <button onclick="cal('*')" class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-[#F4CE14] rounded-lg font-bold" >*</button>
+        </div>
+        <div class="line3">
+            <button onclick="cal('4')" class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-white rounded-lg " >4</button>
+            <button onclick="cal('5')" class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-white rounded-lg " >5</button>
+            <button onclick="cal('6')" class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-white rounded-lg " >6</button>
+            <button onclick="cal('-')" class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-[#F4CE14] rounded-lg font-bold" >-</button>
+        </div>
+        <div class="line4">
+            <button onclick="cal('1')" class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-white rounded-lg " >1</button>
+            <button onclick="cal('2')" class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-white rounded-lg " >2</button>
+            <button onclick="cal('3')" class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-white rounded-lg " >3</button>
+            <button onclick="cal('+')" class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-[#F4CE14] rounded-lg font-bold" >+</button>
+        </div>
+        <div class="line5">
+            <button onclick="cal('00')" class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-white rounded-lg ">00</button>
+            <button onclick="cal('0')" class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-white rounded-lg ">0</button>
+            <button onclick="cal('.')" class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#222831] text-white rounded-lg ">.</button>
+            <button onclick="calc()" class="h-[3.5vw] w-[3.5vw] shadow-md shadow-[#F5F5F5] hover:shadow-none m-[12px] bg-[#C80036] text-white rounded-lg ">=</button>
+        </div>
+    </div>
+</center>
+
+<script src="script.js"></script>
+</body>
+</html>
